@@ -67,7 +67,7 @@ $db = new PDO('sqlite:data.sqlite');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 try {
   $db->query('CREATE TABLE data(
-    case TEXT,
+    case VARCHAR(100),
     number VARCHAR(100),
     remark VARCHAR(200),
     citation VARCHAR(200),
